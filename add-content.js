@@ -1,3 +1,6 @@
+var name = prompt ("Please enter your name");
+var decision = confirm ("Nice to meet you!" + " " + name);
+
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
@@ -18,4 +21,4 @@ else {
     greeting = "Welcome!";
 }
 
-document.write('<h3>' + greeting + '</h3>');
+document.write('<h3>' + greeting + ' ' + name + '</h3>');
