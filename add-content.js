@@ -1,4 +1,7 @@
 var name = prompt ("Please enter your name");
+var born = prompt ("What year where you born?!")
+var age = 2020 - born;
+var yourAge = name + " you are " + age + " years old";
 var decision = confirm ("Nice to meet you!" + " " + name);
 
 var today = new Date();
@@ -22,3 +25,5 @@ else {
 }
 
 document.write('<h3>' + greeting + ' ' + name + '</h3>');
+document.getElementById("demo")
+                .style.color = "blue";
