@@ -8,22 +8,38 @@ var today = new Date();
 var hourNow = today.getHours();
 var greeting;
 
-if (hourNow > 18) {
-    greeting = 'Good evening!';
+function greeting(){
+
+    if(hourNow >= 0 && hourNow <= 24){
+    
+        if (hourNow > 18) {
+        greeting = 'Good evening!';
+        }
+    
+        else if (hourNow > 12) {
+        greeting = 'Good afternoon!';
+        }
+    
+        else if (hourNow > 0) {
+        greeting = "Good mornig!";
+        }
+    
+        else {
+        greeting = "Welcome!";
+        }
+
+    }
 }
 
-else if (hourNow > 12) {
-    greeting = 'Good afternoon!';
-}
+function age(){
 
-else if (hourNow > 0) {
-    greeting = "Good mornig!";
-}
+    
 
-else {
-    greeting = "Welcome!";
-}
+}    
+
+greeting();
 
 document.write('<h3>' + greeting + ' ' + name + '</h3>');
 document.getElementById("demo")
-                .style.color = "blue";
+                .style.color = "white";
+
