@@ -1,3 +1,4 @@
+'stric js'
 var name = prompt ("Please enter your name");
 var born = prompt ("What year where you born?!")
 var age = 2020 - born;
