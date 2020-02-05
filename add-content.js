@@ -31,11 +31,6 @@ function greeting(){
     }
 }
 
-function age(){
-
-    
-
-}    
 
 greeting();
 
